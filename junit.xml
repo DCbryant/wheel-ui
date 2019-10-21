@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="0" time="12.76">
-  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-10-15T14:30:21" time="4.457" tests="1">
-    <testcase classname="button 是个 div" name="button 是个 div" time="0.022">
+<testsuites name="jest tests" tests="9" failures="0" time="6.395">
+  <testsuite name="class" errors="0" failures="0" skipped="0" timestamp="2019-10-21T14:24:27" time="2.666" tests="5">
+    <testcase classname="class 接受一个classname" name="class 接受一个classname" time="0.007">
+    </testcase>
+    <testcase classname="class 接受2个classname" name="class 接受2个classname" time="0">
+    </testcase>
+    <testcase classname="class xxx" name="class xxx" time="0.001">
+    </testcase>
+    <testcase classname="class yyy" name="class yyy" time="0">
+    </testcase>
+    <testcase classname="class zzz" name="class zzz" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-10-15T14:30:21" time="5.049" tests="2">
-    <testcase classname="icon icon render successful" name="icon icon render successful" time="0.023">
-    </testcase>
-    <testcase classname="icon icon onClick" name="icon icon onClick" time="0.054">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-10-21T14:24:27" time="2.811" tests="1">
+    <testcase classname="button 是个 div" name="button 是个 div" time="0.024">
     </testcase>
   </testsuite>
-  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2019-10-15T14:30:25" time="0.71" tests="1">
+  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2019-10-21T14:24:30" time="0.392" tests="1">
     <testcase classname="我的第一个测试用例 add(1,2) 等于3" name="我的第一个测试用例 add(1,2) 等于3" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="class" errors="0" failures="0" skipped="0" timestamp="2019-10-15T14:30:21" time="7.302" tests="5">
-    <testcase classname="class 接受一个classname" name="class 接受一个classname" time="0.004">
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-10-21T14:24:27" time="2.991" tests="2">
+    <testcase classname="icon icon render successful" name="icon icon render successful" time="0.033">
     </testcase>
-    <testcase classname="class 接受2个classname" name="class 接受2个classname" time="0.001">
-    </testcase>
-    <testcase classname="class xxx" name="class xxx" time="0">
-    </testcase>
-    <testcase classname="class yyy" name="class yyy" time="0.001">
-    </testcase>
-    <testcase classname="class zzz" name="class zzz" time="0">
+    <testcase classname="icon icon onClick" name="icon icon onClick" time="0.07">
     </testcase>
   </testsuite>
 </testsuites>
