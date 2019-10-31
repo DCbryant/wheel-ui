@@ -1,8 +1,8 @@
 import React from 'react'
-import '../icons/wechat.svg'
-import '../icons/qq.svg'
-import '../icons/aliPay.svg'
-// import './importIcons'
+// import '../icons/wechat.svg'
+// import '../icons/qq.svg'
+// import '../icons/aliPay.svg'
+import './importIcons'
 
 import classes from '../helpers/classes';
 import './icon.scss';
@@ -12,7 +12,7 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 }
 
 const Icon: React.FunctionComponent<IconProps> = ({className, name, ...restProps}) => {
-  console.log(classes('wheel-icon', className))
+  // console.log(classes('wheel-icon', className))
   return (
     <span>
       <svg className={classes('wheel-icon', className)} {...restProps}>
