@@ -1,0 +1,21 @@
+  
+@import "../_helper.scss";
+
+.wheel-layout {
+  display: flex;
+  flex-direction: column;
+  &-content {
+    flex-grow: 1;
+  }
+  & & {
+    flex-grow: 1;
+    flex-direction: row;
+  }
+  &-hasAside {
+    flex-direction: row;
+    .wheel-layout {
+      flex-direction: column;
+    }
+  }
+}
+
