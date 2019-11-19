@@ -9,7 +9,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
   children: ReactElement | Array<ReactElement>
 }
 
-const Dialog: FunctionComponent<Props> = (props: any) => {
+const Layout: FunctionComponent<Props> = (props: any) => {
   const {className, ...rest} = props;
   const children = props.children as Array<ReactElement>;
   //reduce 减少、归并， some也可以实现
@@ -22,4 +22,9 @@ const Dialog: FunctionComponent<Props> = (props: any) => {
   )
 }
 
-export default Dialog;
+export default Layout;
+export {Layout};
+export {default as Header} from './Header';
+export {default as Content} from './Content';
+export {default as Footer} from './Footer';
+export {default as Aside} from './Aside';
