@@ -1,0 +1,50 @@
+import React, {useState, Fragment, FormEvent} from 'react'
+import Form, {FormValue} from './Form'
+import Validator from './validator'
+
+const FormExample: React.FunctionComponent = () => {
+  const [formData, setFormData] = useState<FormValue>({
+    username: '',
+    password: ''
+  })
+  const [fields] = useState([
+    {name: 'username', label: '用户名', input: {type: 'text'}},
+    {name: 'password', label: '密码', input: {type: 'password'}},
+  ])
+  const [errors, setErrors] = useState({})
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    console.log(formData)
+    const rules = [
+      {
+        key: 'username', required: true,
+      },
+      {
+        key: 'username', minLength: 8, maxLength: 16,
+      },
+        
+      {key: 'username', pattern: /^[A-Za-z0-9]+$/},
+      {key: 'password', required: true}
+    ] 
+    const errors = Validator(formData, rules)
+    setErrors(errors)
+    console.log(errors, 'errors')
+  } 
+
+  return (
+    <Form
+      value={formData}
+      fields={fields}
+      buttons={
+        <Fragment>
+          <button type='submit'>提交</button>
+          <button>返回</button>
+        </Fragment>
+      }
+      errors={errors}
+      onSubmit={onSubmit}
+      onChange={(newValue) => setFormData(newValue)}
+    />
+  )
+}
+
+export default FormExample

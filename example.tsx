@@ -4,7 +4,8 @@ import {HashRouter as Router, Route, NavLink} from 'react-router-dom'
 
 // import IconExample from './lib/Icon/Icon.example'
 import DialogExample from './lib/Dialog/Dialog.example'
-import LayoutExample from './lib/Layout/Layout.axample'
+import LayoutExample from './lib/Layout/Layout.example'
+import FormExample from './lib/Form/Form.example'
 import IconDemo from './lib/Icon/Icon.demo';
 import './lib/index.scss'
 import './example.scss'
@@ -33,12 +34,16 @@ ReactDOM.render((
             <li>
               <NavLink to='/layout'>Layout</NavLink>
             </li>
+            <li>
+              <NavLink to='/form'>Form</NavLink>
+            </li>
           </ul>
         </Aside>
         <Content className='site-main'>
           <Route path='/icon' component={IconDemo} />
           <Route path='/dialog' component={DialogExample} />
           <Route path='/layout' component={LayoutExample} />
+          <Route path='/form' component={FormExample} />
         </Content>
       </Layout>
       <Footer className='site-footer'>
