@@ -7,6 +7,7 @@ import DialogExample from './lib/Dialog/Dialog.example'
 import LayoutExample from './lib/Layout/Layout.example'
 import FormExample from './lib/Form/Form.example'
 import IconDemo from './lib/Icon/Icon.demo';
+import TableDemo from './lib/Table/Table.example';
 import './lib/index.scss'
 import './example.scss'
 const logo = require('./logo.png')
@@ -37,6 +38,9 @@ ReactDOM.render((
             <li>
               <NavLink to='/form'>Form</NavLink>
             </li>
+            <li>
+              <NavLink to='/table'>Table</NavLink>
+            </li>
           </ul>
         </Aside>
         <Content className='site-main'>
@@ -44,6 +48,7 @@ ReactDOM.render((
           <Route path='/dialog' component={DialogExample} />
           <Route path='/layout' component={LayoutExample} />
           <Route path='/form' component={FormExample} />
+          <Route path='/table' component={TableDemo} />
         </Content>
       </Layout>
       <Footer className='site-footer'>
